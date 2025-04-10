@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saniya's Personal Portfolio Website</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/cf21e083be.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <div id="scroll-bar"></div>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpg" class="logo" >
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#resume-section">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                <button id="themeToggle">🌙</button>
+
+            </nav>
+            <div class="header-text">
+                <div class="text-photo-container">
+                    <img src="images/photo.jpg" alt="Saniya's Photo" class="profile-photo">
+                    <div class="text-content">
+                        <p>AI & DATA SCIENCE STUDENT</p>
+                        <h1>HI I'M <span id="typing-text"></span></h1>
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- -------------------------------------------------------<ABOUT>-------------------------------------------------------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/depiction.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">ABOUT ME</h1>
+                    <p>I am a passionate and curious learner currently pursuing a Bachelor of Engineering in Artificial Intelligence and Data Science. With a strong foundation in data analytics and a deep interest in solving real-world problems through technology, I strive to turn insights into impact.
+
+                        Beyond academics, I find joy in creative expressions like Bharatanatyam, classical dance, and painting — which help me balance logic with art. I'm also an avid reader of fictional books and love discovering stories through movies.
+                        
+                        I’m always eager to grow, collaborate, and contribute to meaningful projects that make a difference.
+                        </p>
+                    <div class="tab-titles">
+                        <p class=" tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                        <p class="tab-links"onclick="opentab('hobbies')">Hobbies</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span><strong>Programming & Data Analysis:</strong> Python (Pandas, NumPy), SQL, Excel</span></li>
+                            <li><span><strong>Data Preprocessing:</strong> Cleaning, Transformation, Feature Engineering</span></li>
+                            <li><span><strong>Data Visualization:</strong> Power BI, Matplotlib, Seaborn</span></li>
+                            <li><span><strong>Databases:</strong> MySQL</span></li>
+                            <li><span><strong>Web Development:</strong> HTML, CSS, JavaScript (Basic), Django (Beginner)</span></li>
+                            <li><span><strong>Cloud & AI Tools:</strong> Google BigQuery, IBM Watson Studio, IBM Watson Assistant</span></li>
+                            <li><span><strong>Academic Foundations:</strong> Artificial Intelligence, Machine Learning, Deep Learning</span></li>
+
+                        </ul>
+                        
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Fresher</span></li>
+                            <!-- <li><span>Python</span></li> -->
+                            <!-- <li><span>MYSQL</span></li> -->
+                            <!-- <li><span>Machine Learning</span></li> -->
+                            <!-- <li><span>Pandas</span></li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Sandip Institute of Technology & Research Centre , Nashik  |
+                                 BE in Artificial Intelligence & Data Science |  SPPU |  Dec 2021 – Present |
+                                 CGPA: 8 </span></li>
+                            <li><span>Mahila Samaj Junior College , Bhandara  |
+                                 HSC |  MSBSHSE |  Jun 2020 – Mar 2021 |
+                                 86%</span></li>
+                            <li><span>Mahila Samaj High School, Bhandara  |
+                                 SSC |  MSBSHSE | Jun 2018 – Mar 2019 |
+                                 89%</span></li>
+                            <!-- <li><span>Machine Learning</span></li> -->
+                            <!-- <li><span>Pandas</span></li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="hobbies">
+                        <ul>
+                            <li><span>Enthusiast of Bharatanatyam and Indian Classical Dance</span></li>
+                            <li><span>Capturing beauty on canvas through Painting </span></li>
+                            <li><span>Reading Fictional Books</span></li>
+                            <li><span>Movie Enthusiast</span></li>
+                            <!-- <li><span>Pandas</span></li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------------------------------<portfolio>---------------------------------------- -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">MY WORK</h1>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="data-science">Data Analytics & BI</button>
+                    <button class="filter-btn" data-filter="web-dev">Front-end Web Development</button>
+                    <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                    <button class="filter-btn" data-filter="ibm">IBM Cloud</button> 
+                </div>
+                <div class="work-list">
+                    <div class="work" data-category="data-science">
+                        
+                        <img src="photos/photo2.jpg" alt=""  >
+                        <div class="layer">
+                            <h3>Food Delivery App Data Analysis</h3><br>
+
+                            
+                            <a href="https://hicounselor.com/certificate/verify/MTE5NTg1MTM0"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work" data-category="ibm">
+                        
+                        <img src="photos/photo10.jpg" alt=""  >
+                        <div class="layer">
+                            <h3>Chatbot using IBM Watson Assistant</h3><br>
+                            <p>A conversational AI chatbot designed for a flower shop using IBM Watson Assistant.</p>
+
+                            
+                            <a href="https://www.credly.com/badges/d8c4f295-e23e-4ff0-8284-4feb0869fa07"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work" data-category="ibm">
+                        
+                        <img src="photos/photo1.jpg" alt=""  >
+                        <div class="layer">
+                            <h3>Loan Risk Prediction Model using IBM Watson Studio</h3><br>
+                            <!-- <p>A conversational AI chatbot designed for a flower shop using IBM Watson Assistant.</p> -->
+
+                            
+                            <a href="https://skills.yourlearning.ibm.com/certificate/share/390b2eb4deewogICJvYmplY3RJZCIgOiAiTURMLTIxOSIsCiAgImxlYXJuZXJDTlVNIiA6ICIxNDM5ODQ2UkVHIiwKICAib2JqZWN0VHlwZSIgOiAiQUNUSVZJVFkiCn0ce68d72df0-10"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work" data-category="data-science">
+                        <img src="photos/photo3.jpg" alt="">
+                        <div class="layer">
+                            <h3>E-commerce Dashboard  </h3><br>
+                            <!-- <P>A web development project.</P> -->
+                            <a href="https://github.com/S-meshram02/ecommerce-dashboard.git"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work" data-category="web-dev">
+                        <img src="photos/photo6.jpg" alt="">
+                        <div class="layer">
+                            <h3>Vedic.com</h3><br>
+                            <P>A symptom-based disease diagnosis and medication suggestion website built for Project-Based Learning.</P>
+                            <p>(Group Project)</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work" data-category="web-dev">
+                        <img src="photos/photo8.jpg" alt="">
+                        <div class="layer">
+                            <h3>Online Event Display</h3><br>
+                            <P>A website for showcasing posters of upcoming college events in one place, built for Project-Based Learning.</P>
+                            <p>(Group Project)</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work" data-category="ml">
+                        <img src="photos/photo9.jpg" alt="">
+                        <div class="layer">
+                            <h3> Fake News Detection Model </h3><br>
+                            <!-- <P></P> -->
+                            <a href="https://github.com/S-meshram02/fake-news-detection-model.git"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work" data-category="ml">
+                        <img src="photos/photo4.jpg" alt="">
+                        <div class="layer">
+                            <h3> Credit Card Fraud Detection  </h3><br>
+                            <!-- <P></P> -->
+                            <a href="https://github.com/S-meshram02/credit-card-fraud-detection.git"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work" data-category="web-dev">
+                        <img src="photos/photo7.jpg" alt="">
+                        <div class="layer">
+                            <h3>Personal Portfolio Website </h3><br>
+                            <P>Developed a portfolio using HTML, CSS, and JavaScript.</P>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+
+            </div>
+        </div>
+<!-- ----------------------------------------------------<certifications>----------------------------- -->
+
+    <div id="certifications">
+        <div class="container">
+            <h1 class="sub-title">Certifications</h1>
+    
+            <!-- Category Buttons -->
+            <div class="cert-filter-buttons">
+                <button class="cert-filter active" data-filter="google-data">Google Data Analytics</button>
+                <button class="cert-filter" data-filter="ibm skillsbuild">IBM SkillsBuild</button>
+
+                <button class="cert-filter" data-filter="python">Python</button>
+                <button class="cert-filter" data-filter="infosys">Infosys Springboard</button>
+                <button class="cert-filter" data-filter="ai">AI</button>
+                <button class="cert-filter" data-filter="google cloud">Google Cloud</button>
+
+                <button class="cert-filter" data-filter="other">Other</button>
+            </div>
+    
+            <!-- Certifications Grid -->
+            <div class="cert-container">
+                <!-- Google Data Analytics -->
+                <div class="cert-group" data-category="google-data">
+                    <img src="certificates/google DA/Coursera 1.jpg" alt="Google Data Analytics Certificate">
+                    <img src="certificates/google DA/Coursera 2.jpg" alt="Google Data Analytics Certificate">
+                    <img src="certificates/google DA/Coursera 3.jpg" alt="Google Data Analytics Certificate">
+                </div>
+                <!-- ------IBM SKILLSBUILD -->
+                <div class="cert-group" data-category="ibm skillsbuild">
+                    <img src="certificates/IBM SkillsBuild/IBMDesign20250406-27-wbcgue_page-0001.jpg" alt="IBM Skillsbuild Certificate">
+                    <img src="certificates/IBM SkillsBuild/IBMDesign20250409-26-zko7ui_page-0001.jpg" alt="IBM Skillsbuild Certificate">
+                    <img src="certificates/IBM SkillsBuild/IBM chatbot Certificate _ IBM SkillsBuild_page-0001.jpg" alt="IBM Skillsbuild Certificate">
+                    <img src="certificates/IBM SkillsBuild/IBMDesign20250410-28-su7a4u_page-0001.jpg" alt="IBM Skillsbuild Certificate">
+                </div>
+    
+                <!-- Python -->
+                <div class="cert-group" data-category="python">
+                    <img src="certificates/Python/udemy python _page-0001.jpg" alt="Python Certification">
+                    <img src="certificates/Python/Saniya Meshram - Python.png" alt="Python Certification">
+                    <!-- <img src="python-cert3.jpg" alt="Python Certification"> -->
+                </div>
+    
+                <!-- Infosys Springboard -->
+                <div class="cert-group" data-category="infosys">
+                    <img src="certificates/infosys springboard/pragati PTF_page-0001.jpg" alt="Infosys Springboard Certificate">
+                    <img src="certificates/infosys springboard/Programming Fundamentals using Python - Part 1_page-0001.jpg" alt="Infosys Springboard Certificate">
+                    <img src="certificates/infosys springboard/Programming Fundamentals using Python - Part 2_page-0001.jpg" alt="Infosys Springboard Certificate">
+                    <img src="certificates/infosys springboard/Object Oriented Programming using Python_page-0001.jpg" alt="Infosys Springboard Certificate">
+                    <img src="certificates/infosys springboard/Database Management System Part - 1_page-0001.jpg" alt="Infosys Springboard Certificate">
+                    <img src="certificates/infosys springboard/Database Management System Part - 2_page-0001.jpg" alt="Infosys Springboard Certificate">
+                    <img src="certificates/infosys springboard/Introduction to Arti cial Intelligence_page-0001.jpg" alt="Infosys Springboard Certificate">
+                    <img src="certificates/infosys springboard/Introduction to Business Intelligence_page-0001.jpg" alt="Infosys Springboard Certificate">
+                    <img src="certificates/infosys springboard/Introduction to Cloud Computing_page-0001.jpg" alt="Infosys Springboard Certificate">
+                    <img src="certificates/infosys springboard/Introduction to Cyber Security_page-0001.jpg" alt="Infosys Springboard Certificate">
+                </div>
+    
+                <!-- AI -->
+                <div class="cert-group" data-category="ai">
+                    <img src="certificates/AI/certificate-elements-of-ai (1).png" alt="AI Certificate">
+                    <img src="certificates/AI/Forage_ai_page-0001.jpg" alt="AI Certificate">
+                </div>
+                
+                <!-- Google Cloud Skills Boost Category -->
+                 
+                <div class="cert-group" data-category="google cloud"> 
+                    <!-- <h2>Google Cloud Skills Boost</h2> -->
+                    <div class="cert-grid">
+                        <a href="https://www.cloudskillsboost.google/public_profiles/c65a62ce-037a-48db-a1fd-142db70829b5" target="_blank" class="cert-card">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Google_Cloud_logo.svg" alt="Google Cloud Skills Boost">
+                            <h3>Google Cloud Skills Boost</h3>
+                            <p class="cert-link">View My Google Cloud Badges</p>
+                        </a>
+                    </div>
+                </div> 
+                
+
+
+
+
+
+    
+                <!-- Other -->
+                <div class="cert-group" data-category="other">
+                    <img src="certificates/other/AWS Skill Builder Course Completion Certificate_page-0001.jpg" alt="AWS certificate">
+                    <img src="certificates/other/Food Delivery App Data Analysis_page-0001.jpg" alt="Other Certificate">
+
+                    <img src="certificates/other/Coursera_presentation_page-0001.jpg" alt="Other Certificate">
+                    <img src="certificates/other/open weaver.jpg" alt="Other Certificate">
+                    <!-- <img src="other-cert4.jpg" alt="Other Certificate"> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+
+    <!-- ---------------------------------------<resume>-------------------------------- -->
+        <div id="resume-section">
+            <h1 class="sub-title">View My Resume</h1>
+            <div class="resume-container">
+                <iframe src="SaniyaResume_mar2025.pdf" id="resume-frame"></iframe>
+            </div>
+            <a href="SaniyaResume_mar2025.pdf" download class="btn">Download Resume</a>
+        </div>
+        
+
+<!-- ------------------------------------------------------<contact>---------------------------------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">CONTACT ME</h1>
+                    <p><a href=""><i class="fa-solid fa-envelope"></i></a>   : archimeshram03@gmail.com</p>
+                    <p><a href=""><i class="fa-solid fa-phone"></i></a>  :  7887997917</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/saniya-meshram-13482023a"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/S-meshram02"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://x.com/SaniyaMeshram23?s=09"><i class="fa-brands fa-x-twitter"></i></a>
+                        <!-- <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a> -->
+                        <!-- <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a> -->
+                        <a href="https://wa.link/10hud3"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="http://t.me/SaniyaMeshram02"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                    <a href="SaniyaResume_mar2025.pdf" download class="btn btn2">Download Resume</a>
+                    
+                
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="NAME" placeholder="Your Name" required>
+                        <input type="email" name="EMAIL" placeholder="Your Email" required>
+                        <textarea name="MESSAGE" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 Saniya Meshram. </p>
+        </div>
+    </div>
+
+
+<!-- -----------------------------------------------------------------javascripts-------------------- -->
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+    </script>
+    <script>
+        var sidemenu= document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right= "0";
+        }
+        function closemenu(){
+            sidemenu.style.right= "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxXco96jcJMUhrz-R6JpLFSV_yhl_Opm4uxYTAdekClxTU111jt9qW43CRfrjVwP5zK/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg= document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          msg.innerHTML= " Message sent successfully"
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                
+                setTimeout(function(){
+                    msg.innerHTML= ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      
+    
+
+    <button onclick="topFunction()" id="topBtn" title="Go to top">↑</button>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let topButton = document.getElementById("topBtn");
+    
+            // Check if button exists before running script
+            if (topButton) {
+                window.onscroll = function () {
+                    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                        topButton.style.display = "block";
+                    } else {
+                        topButton.style.display = "none";
+                    }
+                };
+    
+                // Scroll to top smoothly
+                topButton.addEventListener("click", function () {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                });
+            } else {
+                console.error("Go to Top button not found!");
+            }
+        });
+    </script>
+    
+    <script>
+        let themeToggle = document.getElementById("themeToggle");
+    
+        themeToggle.addEventListener("click", function () {
+            document.body.classList.toggle("light-mode");
+            themeToggle.textContent = document.body.classList.contains("light-mode") ? "🌞" : "🌙";
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let textElement = document.getElementById("typing-text");
+            let text = "SANIYA MESHRAM";
+            let index = 0;
+    
+            function type() {
+                if (index < text.length) {
+                    textElement.innerHTML += text.charAt(index);
+                    index++;
+                    setTimeout(type, 100); // Speed of typing
+                }
+            }
+    
+            type(); // Start typing effect
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () { 
+            let filterButtons = document.querySelectorAll(".filter-btn"); 
+            let workItems = document.querySelectorAll(".work"); 
+            
+            // Show only "Data Science" category by default 
+            workItems.forEach(item => { 
+                if (item.getAttribute("data-category") === "data-science") { 
+                    item.style.display = "block"; 
+                } else { 
+                    item.style.display = "none"; 
+                } 
+            }); 
+            
+            filterButtons.forEach(button => { 
+                button.addEventListener("click", function () { 
+                    document.querySelector(".filter-btn.active").classList.remove("active"); 
+                    this.classList.add("active"); 
+                    
+                    let filterValue = this.getAttribute("data-filter"); 
+                    
+                    workItems.forEach(item => { 
+                        if (item.getAttribute("data-category") === filterValue) { 
+                            item.style.display = "block"; 
+                        } else { 
+                            item.style.display = "none"; 
+                        } 
+                    }); 
+                }); 
+            }); 
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let scrollBar = document.getElementById("scroll-bar");
+    
+            if (scrollBar) {
+                window.addEventListener("scroll", function () {
+                    let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+                    let scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                    let scrolled = (scrollTop / scrollHeight) * 100;
+                    scrollBar.style.width = scrolled + "%";
+                });
+            } else {
+                console.error("Scroll bar element not found!");
+            }
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let filterButtons = document.querySelectorAll(".cert-filter");
+            let certGroups = document.querySelectorAll(".cert-group");
+    
+            // Show only "Google Data Analytics" certificates by default
+            document.querySelector('[data-category="google-data"]').classList.add("active");
+    
+            filterButtons.forEach(button => {
+                button.addEventListener("click", function () {
+                    // Remove active class from previous button
+                    document.querySelector(".cert-filter.active").classList.remove("active");
+                    this.classList.add("active");
+    
+                    let filterValue = this.getAttribute("data-filter");
+    
+                    // Hide all certificate groups
+                    certGroups.forEach(group => {
+                        group.classList.remove("active");
+                    });
+    
+                    // Show the selected category
+                    document.querySelector(`[data-category="${filterValue}"]`).classList.add("active");
+                });
+            });
+        });
+    </script>
+    
+    
+    
+    
+    
+    
+    
+
+</body>
+</html>
