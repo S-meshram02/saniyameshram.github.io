@@ -236,6 +236,7 @@ nav ul li a:hover::after{
 /* ----------------------------------------------<portfolio>------------------------------------ */
 #portfolio{
     padding:50px 0;
+    text-align: center;
 }
 .work-list{
     display: flex;
@@ -751,6 +752,10 @@ nav .fa-solid{
         /* .about-col-1{
             margin-bottom: 30px;
         } */
+        .sub-title {
+            font-size: 40px;
+
+         }
         .about-col-2{
             font-size: 14px;
             padding: 0 10px;
